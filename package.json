@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/seattleacademy/node-sense-hat#readme",
   "dependencies": {
-    "nodeimu": "^2.1.7"
+    "nodeimu": "^2.1.7",
+    "python-shell": "^0.4.0"
   }
 }

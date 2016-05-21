@@ -1,7 +1,14 @@
 var nodeimu = require('nodeimu');
 var IMU = new nodeimu.IMU();
 
-IMU.getValue(function(err, data) {
-    if (err) console.log(err)
-    else console.log(data);
+var PythonShell = require('python-shell');
+
+PythonShell.run('python/helloworld.py', function (err, results) {
+  if (err) throw err;
 });
+
+IMU.getValue(function(err, data) {
+    if (err) throw err;
+    console.log(data);
+});
+
